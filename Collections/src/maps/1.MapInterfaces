@@ -1,0 +1,32 @@
+// The Map interface ---------------------------------------------------------------------------------------------------
+
+// A map is and object that stores associations between keys and values or key/value pairs.
+// key must be unique while value can be a duplicate
+// They don't implement Iterable so you can't cycle though using for-each-loop
+
+// The following interfaces support maps:
+// Map - maps unique keys to value
+// Map.Entry - Describes and element in a map - inner class of Map
+// Map.NavigableMap - Extends SortedMap to handle retrieval of entries based on closest-match searches
+// SortedMap - extends Map so that the keys are maintained in ascending order
+
+// put() - put object into a map specifying the key and the value
+// get() - obtain value while passing the key as an argument
+
+// Maps are not really collection but you can obtain a collection-view
+// entrySet() - obtain collection-view
+// keySet() - obtain collection-view of keys
+// values() - obtain collection-view of values
+// of() - use it to create small maps
+
+// The SortedMap Interface - extends Map -------------------------------------------------------------------------------
+// It ensures that the entries are maintained in ascending order based on the keys
+// Allow very efficient manipulations of submaps - headMap(), tailMap(), subMap()
+
+// The NavigableMap - extends SortedMap --------------------------------------------------------------------------------
+// Retrieval of entires based on the closest match to a given key or keys
+
+// The Map.Entry Interface ---------------------------------------------------------------------------------------------
+// Enables you to work with a map entry
+// Non-static methods: equals, getKey, getValue, hashCode, setValue
+// Two static methods: comparingByKey() and comparingByValue()
